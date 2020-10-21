@@ -11,32 +11,47 @@ import SwiftUI
 struct ImageOverlay: View {
     var body: some View {
         ZStack {
+            
+            VStack {
+                
+                Image(systemName: "umbrella")
+                    .font(.system(size:36))
+                Spacer()
+            }.padding()
+            
+            
+            
             Text("Tech")
                 .foregroundColor(Color.black)
             .font(.system(size: 16))
-            .padding()
+                
                 
         }
     }
 }
 
 struct CategoriesView: View {
+    
+    
     var body: some View {
-        VStack {
-            Rectangle()
-                .fill(Color.clear)
-                .frame(width:100, height: 100)
-                .background(Color.init(red: 0.95, green: 0.95, blue: 0.95))
-            .cornerRadius(12)
-                .scaledToFit()
-                .overlay(ImageOverlay(), alignment: .bottom)
-            
+        ZStack {
+            VStack {
+                Rectangle()
+                    .foregroundColor(Color.clear)
+                    .frame(width:400, height:400)
+                    
+                    .background(Color.init(red: 0.95, green: 0.95, blue: 0.95))
+                .cornerRadius(25)
+                    .scaledToFit()
+                    .overlay(ImageOverlay(), alignment: .bottom)
                 
+                    
+            }
+          
         }
-        // Categories
-        
-        
+            
     }
+    
 }
 
 struct CategoriesView_Previews: PreviewProvider {

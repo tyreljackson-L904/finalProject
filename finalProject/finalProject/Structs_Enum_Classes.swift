@@ -7,15 +7,6 @@
 //
 
 import SwiftUI
+import Foundation
 
-struct Structs_Enum_Classes: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct Structs_Enum_Classes_Previews: PreviewProvider {
-    static var previews: some View {
-        Structs_Enum_Classes()
-    }
-}
